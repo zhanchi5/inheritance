@@ -10,17 +10,17 @@ int main(int argc, char* argv[])
 	Check product; // создаЄм объект класса
 	unsigned int price, weight, amount;
 
-	cout << "¬ведите цену: ";
+	cout << "Enter price: ";
 	cin >> price;
 
-	cout << "¬ведите вес: ";
+	cout << "Enter weight ";
 	cin >> weight;
 
-	cout << "¬ведите количество: ";
+	cout << "Enter amount: ";
 	cin >> amount;
 	
 
-	product.setName("\"”ральские\" пельмени"); // устанавливаем название продукта
+	product.setName("SPAR"); // устанавливаем название продукта
 	product.setPrice(price); // цена продукта
 	product.setWeight(weight);   // вес
 	cout << endl;

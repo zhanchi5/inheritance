@@ -7,16 +7,16 @@ class Check : public Buy // открытое наследование
 public:
 	void printProductInfo()
 	{
-		cout << "Товар: " << getName() << endl;
-		cout << "Цена:  " << getPrice() << " руб\n";
-		cout << "Вес:   " << getWeight() << " гр\n\n";
+		cout << "Item: " << getName() << endl;
+		cout << "Price:  " << getPrice() << " rub\n";
+		cout << "Weight:   " << getWeight() << " gr\n\n";
 	}
 
 	void printBuyInfo()
 	{
-		cout << "Товара куплено: " << getSum() << " шт\n";
-		cout << "На сумму:       " << getSumPrice() << " руб\n";
-		cout << "Общий вес:      " << getSumWeight() << " гр\n\n";
+		cout << "Items bought: " << getSum() << " \n";
+		cout << "Total summary:       " << getSumPrice() << " rub\n";
+		cout << "Total weight:      " << getSumWeight() << " gr\n\n";
 	}
 
 };
