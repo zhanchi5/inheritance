@@ -3,20 +3,20 @@
 class Product
 {
 private:
-	char name[50]; // имя товара
-	double price, // цена
-		weight; // вес 1 ед.
+	char name[50]; 
+	double price, 
+		weight; 
 public:
-	Product(); // конструктор
+	Product(); 
 
-	void setName(const char *); // установить имя товара
-	const char *getName() const; // возвратить имя товара
+	void setName(const char *); 
+	const char *getName() const; 
 
-	void setPrice(const double &); // установить цену товара
-	double getPrice() const; // возвратить цену товара
+	void setPrice(const double &); 
+	double getPrice() const; 
 
-	void setWeight(const double &); // установить вес 1 ед. товара
-	double getWeight() const; // возвратить вес 1 ед. товара
+	void setWeight(const double &); 
+	double getWeight() const; 
 };
 
 
