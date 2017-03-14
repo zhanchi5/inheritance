@@ -2,7 +2,7 @@
 #include "stdafx.h"
 
 using namespace std;
-class Check : public Buy // открытое наследование
+class Check : public Buy 
 {
 public:
 	void printProductInfo()
