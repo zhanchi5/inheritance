@@ -1,29 +1,29 @@
 #include "stdafx.h"
 
-Buy::Buy() // конструктор
+Buy::Buy() 
 	: sum(0), sum_price(0.0), sum_weight(0.0)
 {
-	// пустое тело конструктора
+	
 }
 
-void Buy::setSum(const int &value) // установить количество покупаемого товара
+void Buy::setSum(const int &value) 
 {
 	sum = (value >= 0 ? value : 0);
-	sum_price = sum * getPrice(); // получаем стоимость всего товара
-	sum_weight = sum * getWeight(); // получаем общий вес покупаемого товара
+	sum_price = sum * getPrice(); 
+	sum_weight = sum * getWeight(); 
 }
 
-int Buy::getSum() const // возвратить количество покупаемого товара
+int Buy::getSum() const 
 {
 	return sum;
 }
 
-double Buy::getSumPrice() const // возвратить цену за весь купленный товар
+double Buy::getSumPrice() const 
 {
 	return sum_price;
 }
 
-double Buy::getSumWeight() const // возвратить общий вес покупки
+double Buy::getSumWeight() const 
 {
 	return sum_weight;
 }
