@@ -1,19 +1,19 @@
 #pragma once
 #include "stdafx.h"
-class Buy : public Product // открытое наследование
+class Buy : public Product 
 {
 private:
-	int    sum; // количество покупаемого товара в шт.
-	double sum_price, // цена за весь купленный товар   
-		sum_weight; // общий вес
+	int    sum; 
+	double sum_price,    
+		sum_weight; 
 public:
-	Buy(); // конструктор
+	Buy();
 
-	void setSum(const int &); // установить количество покупаемого товара
-	int getSum() const; // возвратить количество покупаемого товара
+	void setSum(const int &); 
+	int getSum() const; 
 
-	double getSumPrice() const; // возвратить цену за весь купленный товар
+	double getSumPrice() const; 
 
-	double getSumWeight() const; // возвратить общий вес покупки
+	double getSumWeight() const; 
 };
 
