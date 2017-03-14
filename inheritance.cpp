@@ -5,9 +5,8 @@
 
 int main(int argc, char* argv[])
 {
-	setlocale(LC_ALL, "rus");
 
-	Check product; // создаём объект класса
+	Check product; 
 	unsigned int price, weight, amount;
 
 	cout << "Enter price: ";
@@ -20,14 +19,14 @@ int main(int argc, char* argv[])
 	cin >> amount;
 	
 
-	product.setName("SPAR"); // устанавливаем название продукта
-	product.setPrice(price); // цена продукта
-	product.setWeight(weight);   // вес
+	product.setName("Pineapple"); 
+	product.setPrice(price); 
+	product.setWeight(weight);   
 	cout << endl;
-	product.setSum(amount); // куплено шт.
+	product.setSum(amount); 
 
-	product.printProductInfo(); //чек продукта
-	product.printBuyInfo(); // чек покупки
+	product.printProductInfo(); 
+	product.printBuyInfo(); 
 
 	system("pause");
 	return 0;
